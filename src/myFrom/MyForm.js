@@ -18,4 +18,6 @@ let MyForm = React.createClass({
     input.value && this.setState({content: input.value});
     input.value = '';
   }
-})
+});
+
+export default MyForm;
