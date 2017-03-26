@@ -15,7 +15,7 @@ let MyForm = React.createClass({
       <div className="MyForm">
         <div>{this.state.content}</div>
         <div><input type="text" id="input"/></div>
-        <div><button onClick={this.updateContent}>submit</button></div>
+        <div><button className="btn btn-success" onClick={this.updateContent}>submit</button></div>
       </div>
     );
   }
