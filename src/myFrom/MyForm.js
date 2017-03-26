@@ -1,4 +1,5 @@
 import React from 'react';
+import './MyForm.css';
 
 let MyForm = React.createClass({
   getInitialState: () => {
