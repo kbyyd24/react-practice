@@ -14,7 +14,7 @@ let MyForm = React.createClass({
     return (
       <div className="MyForm">
         <div>{this.state.content}</div>
-        <div><input type="text" id="input"/></div>
+        <div><input className="form-group" type="text" id="input"/></div>
         <div><button className="btn btn-success" onClick={this.updateContent}>submit</button></div>
       </div>
     );
