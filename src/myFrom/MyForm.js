@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './MyForm.css';
 
-let MyForm = React.createClass({
-  getInitialState() {
-    return {content: 'no content submit yet'};
-  },
+class MyForm extends Component{
+
+  constructor(props, context) {
+    super(props, context);
+    this.state = {content: 'no content submit yet'};
+    this.updateContent = this.updateContent.bind(this);
+  }
+
   updateContent() {
     let input = document.getElementById('input');
     input.value && this.setState({content: input.value});
     input.value = '';
-  },
+  }
+
   render() {
     return (
       <div className="MyForm">
@@ -19,6 +24,6 @@ let MyForm = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default MyForm;
